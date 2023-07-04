@@ -12,16 +12,16 @@
 
 *::-webkit-scrollbar {
     width: 15px;
-    background-color: rgb(35, 17, 84);
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.414) inset;
+    background-color: rgba(15 15 15);
+    box-shadow: 0px 0px 5px 0px rgb(0, 0, 0) inset;
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: rgb(13, 7, 32);
+    background-color: rgb(22, 22, 22);
 }
 
 body {
-    background-color: #341f97;
+    background-color: rgba(18 18 18);
 }
 
 header {
@@ -33,11 +33,11 @@ header {
     font-size: 1.2em;
     font-weight: 700;
     color: white;
-    background-color: #341f97;
     user-select: none;
     align-items: center;
     z-index: 700;
-    border-bottom: 2px solid #2d1a81;
+    background-color: rgba(14 14 14);
+    box-shadow: 0px 0px 10px black;
 }
 
 nav a {
@@ -56,11 +56,11 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #190e4b;
+    background-color: rgb(25, 25, 25);
 }
 
 .logo:hover {
-    background-color: #190e4b;
+    background-color: rgb(25, 25, 25);
 }
 
 .logo {
@@ -68,9 +68,9 @@ nav a:hover {
     text-decoration: none;
     color: white;
     background-color: transparent;
-    padding: 10px;
-    margin-top: -10px;
-    margin-bottom: -10px;
+    padding: 6px 10px;
+    margin-top: -9px;
+    margin-bottom: -9px;
     border-radius: 10px;
     transition: 0.5s ease;
 }
@@ -80,34 +80,123 @@ nav a:hover {
     padding-top: 100px;
 }
 
-.title {
+.title1 {
     color: white;
     border: 2px solid white;
-    background-color: #22136676;
-    border-radius: 10px;
-    font-weight: 700;
-    width: 140px;
+    background-color: rgba(18 18 18);
+    width: 260px;
     height: 40px;
     font-size: 1em;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0px 10px;
+    outline: none;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.title3::placeholder {
+    color: white;
+    font-weight: 600;
+}
+
+.title2::placeholder {
+    color: white;
+    font-weight: 600;
+}
+
+.title1::placeholder {
+    color: white;
+    font-weight: 600;
+}
+
+.form1::before {
+    cursor: default;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    content: "Windows Apps";
+    color: rgba(18 18 18);
+    font-size: 1em;
+    font-weight: 700;
     align-items: center;
     text-align: center;
-    justify-content: center;
-    display: flex;
+    background-color: white;
+    padding: 8.8px 10px;
+}
+
+.title2 {
+    color: white;
+    border: 2px solid white;
+    background-color: rgba(18 18 18);
+    width: 260px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 700;
     text-decoration: none;
-    transition: 0.5s ease;
-    cursor: grab;
+    cursor: pointer;
+    padding: 0px 10px;
+    outline: none;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
-.title:hover {
-    box-shadow: 0px 0px 10px white;
-    transform: scale(1.1);
-    text-shadow: 0px 0px 7px white;
+.title2::placeholder {
+    color: white;
+    font-weight: 600;
 }
 
-.title:active {
-    box-shadow: 0px 0px 20px white;
-    transform: scale(1.2);
-    text-shadow: 0px 0px 15px white;
+.form2::before {
+    cursor: default;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    content: "Mobile Apps";
+    color: rgba(18 18 18);
+    font-size: 1em;
+    font-weight: 700;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 8.8px 10px;
+}
+
+input:hover {
+    background-color: rgb(34, 34, 34);
+}
+
+.title3 {
+    color: white;
+    border: 2px solid white;
+    background-color: rgba(18 18 18);
+    width: 260px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0px 10px;
+    outline: none;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.title3::placeholder {
+    color: white;
+    font-weight: 600;
+}
+
+.form3::before {
+    cursor: default;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    content: "Pc Games";
+    color: rgba(18 18 18);
+    font-size: 1em;
+    font-weight: 700;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 8.8px 10px;
 }
 
 .vh:hover {
@@ -118,7 +207,7 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     width: 800px;
-    background-color: rgba(44 24 100 / 25);
+    background-color: transparent;
     height: 250px;
     padding: 20px;
     border-radius: 5px;
@@ -139,18 +228,6 @@ nav a:hover {
     height: 200px;
     border-radius: 20px;
     margin-right: 20px;
-}
-
-.card-img-hover {
-    width: 210px;
-    height: 210px;
-    border-radius: 20px;
-    margin-right: 20px;
-    position: absolute;
-    background-color: transparent;
-    transition: 0.5s ease;
-    opacity: 0.2;
-    border: 0px solid white;
 }
 
 .card-img-hover:hover {
@@ -178,6 +255,38 @@ nav a:hover {
     font-weight: 600;
     text-transform: capitalize;
     margin-bottom: 25px;
+}
+
+.card-h1d {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    height: 250px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.711);
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .card-p::after {
@@ -227,16 +336,16 @@ footer {
     width: 100%;
     display: flex;
     position: absolute;
-    justify-content: space-between;
+    justify-content: center;
     padding: 15px 30px;
     font-size: 1.2em;
     font-weight: 700;
     color: white;
-    background-color: #341f97;
     user-select: none;
     align-items: center;
     z-index: 999;
-    border-top: 2px solid #2d1a81;
+    background-color: rgba(14 14 14);
+    box-shadow: 0px 0px 10px black;
 }
 
 .footer-title {
@@ -289,7 +398,7 @@ footer {
     footer {
         color: #fff;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     .footer-title {
@@ -343,6 +452,13 @@ footer {
     .card-img {
         width: 120px;
         height: 120px;
+        margin-left: -20px;
+    }
+
+    .card-img-hover {
+        width: 0px;
+        height: 0px;
+        margin-right: 10px;
     }
 
     .card-h1 {
@@ -379,8 +495,26 @@ footer {
         font-size: 0.8em;
     }
 
+    .card-img-hover {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
     .card-p {
         font-size: 0.6em;
+    }
+
+    .title1 {
+        width: 50%;
+    }
+
+    .title2 {
+        width: 50%;
+    }
+
+    .title3 {
+        width: 50%;
     }
 }
 

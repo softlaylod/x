@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,900;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+*::-webkit-scrollbar {
+    width: 15px;
+    background-color: rgb(35, 17, 84);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.414) inset;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(13, 7, 32);
+}
+
+body {
+    background-color: #341f97;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: white;
+    background-color: #341f97;
+    user-select: none;
+    align-items: center;
+    border-bottom: 2px solid #2d1a81;
+}
+
+nav a {
+    color: white;
+    user-select: none;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+nav a {
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #d1d1d1;
+}
+
+.sub {
+    border: none;
+    z-index: 999;
+    background-color: rgb(255, 59, 92);
+    padding: 8px 15px;
+    margin-left: 5px;
+    font-size: medium;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: 0.7s;
+    z-index: 1;
+}
+
+.srch {
+    direction: rtl;
+    border: none;
+    outline: none;
+    width: 100vh;
+    height: 50px;
+    padding: 0 15px;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+.sub:hover {
+    background-color: #190867;
+}
+
+.sub:active {
+    background-color: #090033;
+    transform: scale(0.9);
+}
+
+.ww {
+    text-align: center;
+    color: rgb(255, 59, 92);
+    font-weight: bold;
+    padding: 50px 20px;
+    margin-top: 50px;
+    letter-spacing: 1px;
+    font-size: xx-large;
+    margin-top: 40px;
+}
+
+.ee {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+    width: 750px;
+    font-size: large;
+    text-transform: capitalize;
+    line-height: 30px;
+}
+
+.srch::placeholder {
+    color: rgb(255, 59, 92);
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.for {
+    background-color: white;
+    width: 100vh;
+    height: 50px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.player {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.up {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    color: white;
+    background-color: rgb(255, 59, 92);
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: large;
+    font-weight: 900;
+    transition: 0.2s;
+}
+
+.up:hover {
+    background-color: rgb(255, 0, 43);
+}
+
+.up:active {
+    background-color: rgb(174, 0, 29);
+    transform: scale(0.9);
+    border-radius: 50%;
+}
+
+.logo{
+    font-size: 1.4em;
+}
+
+.a {
+    font-size: 3em;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.095);
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px 20px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    transition: 0.5s ease;
+    z-index: 999;
+}
+
+.a:hover {
+    background-color: rgba(255, 255, 255, 0.187);
+}
+
+.a:active {
+    transform: scale(1.8);
+}
+
+.mmaa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lng::after {
+    content: "🔽";
+    margin-left: 5px;
+}
+
+#nameTable {
+    color: white;
+    font-size: larger;
+    border: 2px solid rgb(255, 59, 92);
+    padding: 10px;
+    margin-top: 35px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+@media (max-width:1000px) {
+    .card {
+        width: 700px;
+    }
+
+    .card-btn {
+        margin-right: 295px;
+    }
+
+    header {
+        padding: 12px 20px;
+    }
+
+    nav a {
+        font-weight: 700;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    footer {
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-title {
+        font-size: 1em;
+        font-weight: 600;
+    }
+}
+
+@media (max-width:730px) {
+    .card {
+        width: 600px;
+    }
+
+    .card-btn {
+        margin-right: 195px;
+    }
+}
+
+@media (max-width:730px) {
+    .card {
+        width: 600px;
+    }
+
+    .card-btn {
+        margin-right: 195px;
+    }
+
+    .card-h1 {
+        font-size: 1.1em;
+    }
+
+    .card-p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width:500px) {
+    .main{
+        overflow: hidden;
+    }
+
+    header {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    nav a {
+        margin-left: 2px;
+        font-size: 0.9em;
+    }
+
+    .card {
+        width: 100%;
+        height: 150px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .card-img {
+        width: 120px;
+        height: 120px;
+        margin-right: 10px;
+    }
+
+    .card-h1 {
+        font-size: 0.8em;
+        margin-bottom: 6px;
+        font-weight: 750;
+        letter-spacing: 0.5px;
+    }
+
+    .card-p {
+        font-size: .7em;
+    }
+
+    .info {
+        width: 65%;
+        margin-top: 20px;
+    }
+
+    .card-btn {
+        padding: 5px 10px;
+        font-size: 0.7em;
+        margin-top: 7px;
+        margin-right: 116px;
+    }
+
+    footer {
+        padding: 8px 15px;
+        font-size: 0.9em;
+        font-weight: 800;
+    }
+
+    .footer-title a {
+        text-decoration: underline;
+    }
+}

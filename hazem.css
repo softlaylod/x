@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,900;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+*::-webkit-scrollbar {
+    width: 15px;
+    background-color: rgb(35, 17, 84);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.414) inset;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(13, 7, 32);
+}
+
+body {
+    background-color: #341f97;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+img {
+    width: 500px;
+    border-radius: 20px;
+    border: 2px solid white;
+    box-shadow: 1px 1px 10px white;
+}
+
+.icons {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 113%;
+    align-items: center;
+    text-align: center;
+    left: 50%;
+}
+
+.icons a {
+    color: white;
+    font-size: 2em;
+    margin-left: 10px;
+}
+
+span {
+    color: white;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 106%;
+    font-size: 1.2em;
+    font-weight: 800;
+    left: 50%;
+    text-shadow: 0px 0px 15px white;
+}
+
+@media (max-width:530px) {
+    img {
+        width: 300px;
+    }
+
+    span {
+        font-size: 14.5px;
+    }
+}

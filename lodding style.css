@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #222;
+}
+
+body {
+    height: 100vh;
+}
+
+.big {
+    width: 600px;
+    height: 22px;
+    border-radius: 10px;
+    background-color: #222;
+    border: 3px solid rgb(0, 141, 110);
+    left: 50%;
+    top: 50%;
+    color: rgb(0, 141, 110);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.smoll {
+    width: 600px;
+    height: 22px;
+    border-radius: 10px;
+    background-color: rgb(75, 0, 188);
+    border: 3px solid rgb(75, 0, 188);
+    left: 50%;
+    top: 50%;
+    color: rgb(0, 141, 110);
+    transform: translate(-50%, -50%);
+    position: relative;
+    z-index: 99;
+    animation: lod 4s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes lod {
+    0% {
+        left: -51%;
+    }
+
+    100% {
+        left: 50%;
+    }
+}
+
+.ax3 {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: rgb(0, 141, 110);
+    border: 3px solid rgb(0, 141, 110);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: bolder;
+    letter-spacing: 0.5px;
+    opacity: 0;
+    animation: btn 0.1s;
+    animation-delay: 4.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes btn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.ax3:hover {
+    color: rgb(0, 78, 61);
+    border: 3px solid rgb(0, 78, 61);
+}
+
+.ax3:active {
+    color: rgb(0, 39, 31);
+    border: 3px solid rgb(0, 39, 31);
+}
+
+
+@media (max-width:600px) {
+    .big {
+        width: 350px;
+    }
+
+    .smoll {
+        width: 350px;
+    }
+}
+
+span {
+    font-size: 3em;
+    font-weight: bolder;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    color: rgb(0, 141, 110);
+    transform: translate(-50%, -50%);
+}
+
+
+span::after {
+    content: "Windows..";
+}
+
+@media (max-width:600px) {
+    span::after {
+        content: "Mobile..";
+    }
+}

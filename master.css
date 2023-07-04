@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,900;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+*::-webkit-scrollbar {
+    width: 15px;
+    background-color: rgb(35, 17, 84);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.414) inset;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(13, 7, 32);
+}
+
+body {
+    background-color: #341f97;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: white;
+    background-color: #341f97;
+    user-select: none;
+    align-items: center;
+    z-index: 700;
+    border-bottom: 2px solid #2d1a81;
+}
+
+nav a {
+    color: white;
+    user-select: none;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: 0.5s ease;
+    background-color: transparent;
+    padding: 10px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+nav a:hover {
+    background-color: #190e4b;
+}
+
+.logo:hover {
+    background-color: #190e4b;
+}
+
+.logo {
+    font-size: 1.4em;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    padding: 10px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+.main {
+    padding: 20px;
+    padding-top: 100px;
+}
+
+.title {
+    color: white;
+    border: 2px solid white;
+    background-color: #22136676;
+    border-radius: 10px;
+    font-weight: 700;
+    width: 140px;
+    height: 40px;
+    font-size: 1em;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    transition: 0.5s ease;
+    cursor: grab;
+}
+
+.title:hover {
+    box-shadow: 0px 0px 10px white;
+    transform: scale(1.1);
+    text-shadow: 0px 0px 7px white;
+}
+
+.title:active {
+    box-shadow: 0px 0px 20px white;
+    transform: scale(1.2);
+    text-shadow: 0px 0px 15px white;
+}
+
+.vh:hover {
+    text-decoration: underline;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    background-color: rgba(44 24 100 / 25);
+    height: 250px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.711);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.contant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.card-img-hover {
+    width: 210px;
+    height: 210px;
+    border-radius: 20px;
+    margin-right: 20px;
+    position: absolute;
+    background-color: transparent;
+    transition: 0.5s ease;
+    opacity: 0.2;
+    border: 0px solid white;
+}
+
+.card-img-hover:hover {
+    background-color: white;
+    border: 100px solid white;
+    cursor: no-drop;
+}
+
+.card-h1 {
+    color: white;
+    font-size: 1.5em;
+    text-align: start;
+    text-transform: capitalize;
+}
+
+.card-h1::after {
+    content: ".";
+    margin: 0 3px;
+}
+
+.card-p {
+    color: transparent;
+    font-size: .8em;
+    text-align: start;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+
+.card-p::after {
+    content: ".";
+    margin: 0 3px;
+}
+
+.info {
+    width: 100%;
+    direction: ltr;
+    margin-top: 40px;
+}
+
+.card-btn {
+    align-items: center;
+    text-align: center;
+    padding: 10px 25px;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    font-weight: 700;
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    transition: 0.5s ease;
+    text-decoration: none;
+    cursor: grab;
+}
+
+.gg {
+    display: flex;
+}
+
+.card-btn:hover {
+    background-color: rgba(255, 255, 255, 0.429);
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px rgb(255, 255, 255);
+}
+
+.card-btn:active {
+    background-color: rgba(255, 255, 255, 0.577);
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgb(255, 255, 255);
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: white;
+    background-color: #341f97;
+    user-select: none;
+    align-items: center;
+    z-index: 999;
+    border-top: 2px solid #2d1a81;
+}
+
+.footer-title {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.footer-title a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.footer-title a:hover {
+    text-decoration: underline;
+}
+
+.footer_vr {
+    text-transform: capitalize;
+    font-weight: 750;
+}
+
+.vh {
+    font-weight: 900;
+    color: rgba(255 59 92);
+    text-transform: none;
+    transform: skew(30deg);
+    text-decoration: none;
+}
+
+@media (max-width:1000px) {
+    .card {
+        width: 700px;
+    }
+
+    header {
+        padding: 12px 20px;
+    }
+
+    nav a {
+        font-weight: 700;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    footer {
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-title {
+        font-size: 1em;
+        font-weight: 600;
+    }
+}
+
+@media (max-width:730px) {
+    .card {
+        width: 600px;
+    }
+
+    .card-h1 {
+        font-size: 1.1em;
+    }
+
+    .card-p {
+        font-size: 0.2em;
+    }
+}
+
+@media (max-width:500px) {
+    .card-btn {
+        font-size: 0.9em;
+        padding: 7px 20px;
+        margin-top: -5px;
+    }
+
+    .main {
+        overflow: hidden;
+    }
+
+    header {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    nav a {
+        margin-left: 2px;
+        font-size: 0.9em;
+    }
+
+    .card {
+        width: 100%;
+        height: 150px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .card-img {
+        width: 120px;
+        height: 120px;
+        margin-right: 10px;
+    }
+
+    .card-h1 {
+        font-size: 0.8em;
+        margin-bottom: 6px;
+        font-weight: 750;
+        letter-spacing: 0.5px;
+    }
+
+    .card-p {
+        font-size: .7em;
+    }
+
+    .info {
+        width: 65%;
+        margin-top: 20px;
+    }
+
+    footer {
+        padding: 8px 15px;
+        font-size: 0.9em;
+        font-weight: 800;
+    }
+
+    .footer-title a {
+        text-decoration: underline;
+    }
+}
+
+@media (max-width:500px) {
+    .card-btn {
+        font-size: 0.8em;
+        padding: 5px 15px;
+        margin-top: -20px;
+    }
+
+    .card-h1 {
+        font-size: 0.8em;
+    }
+
+    .card-p {
+        font-size: 0.6em;
+    }
+}
+
+.flex {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 0px 10px white;
+    border-top: 2px solid white;
+    background-color: #231466;
+    bottom: 0;
+    animation: hafzem 0.1s linear;
+    animation-fill-mode: forwards;
+    z-index: 999;
+    opacity: 1;
+}
+
+@keyframes hazem {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.flex span {
+    color: #ffffff;
+    font-size: 1.2em;
+    text-shadow: 0px 0px 5px white;
+    font-weight: bold;
+}
+
+.flex button {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    padding: 4px 17px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px white;
+    cursor: pointer;
+}
